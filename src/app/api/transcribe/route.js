@@ -75,9 +75,11 @@ const elevenlabs = new ElevenLabsClient({
 export const config = {
   api: {
     bodyParser: false,
-    sizeLimit: "50mb",   // Increase limit
-  },
-}
+    sizeLimit: "50mb"
+  }
+};
+
+export const runtime = "nodejs";
 
 export async function POST(request) {
   try {
