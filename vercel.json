@@ -1,6 +1,6 @@
 {
   "functions": {
-    "app/api/transcribe/route.js": {
+    "pages/api/transcribe.js": {
       "maxDuration": 60,
       "memory": 1024
     }
