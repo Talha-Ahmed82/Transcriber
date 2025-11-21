@@ -72,6 +72,13 @@ const elevenlabs = new ElevenLabsClient({
   apiKey: process.env.ELEVENLABS_API_KEY,
 });
 
+export const config = {
+  api: {
+    bodyParser: false,
+    sizeLimit: "50mb",   // Increase limit
+  },
+}
+
 export async function POST(request) {
   try {
     const form = await request.formData();
@@ -109,3 +116,15 @@ export async function POST(request) {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
